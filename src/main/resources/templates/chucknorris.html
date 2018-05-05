@@ -12,9 +12,21 @@
         <div class="container">
             <h1 class="display-4">Chuck Noris Jokes</h1>
             <p class="lead" th:text="${joke}">Insert Joke here</p>
+            <button class="btn btn-primary-outline" onclick="myFunction()">Refresh</button>
         </div>
     </div>
-</div>
 
+<hr>
+
+<footer>
+    <p>Created By <a href="https://gousopoulos.gr" target="_blank">Gousopoulos Konstantinos</a></p>
+</footer>
+</div>
 </body>
+
+<script>
+    function myFunction() {
+        location.reload();
+    }
+</script>
 </html>
